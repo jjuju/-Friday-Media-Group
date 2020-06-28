@@ -1,0 +1,43 @@
+//custom colors-variables
+$darkGrayColor :#333333;
+$lightGrayColor:#4B4B4B;
+$redColor      :#CC0001;
+$facebook      :#3A5998;
+$twitter       :#01ACED;
+$white         :#ffffff;
+
+//custom colors-maps
+$theme-colors :("gray":$darkGrayColor,
+    "l-gray":$lightGrayColor,
+    "red":$redColor,
+    "twitter":$twitter,
+    "facebook":$facebook,
+    "white":$facebook);
+
+//custom navbar
+@mixin custom-navbar {
+    display        : flex;
+    width          : 60%;
+    justify-content: space-evenly;
+    align-items    : center;
+    margin         : 0 auto;
+    font-size: 15px;
+  
+}
+
+//navbar color
+$navbar-dark-color:                 $white;
+.navbar{
+    background-color: $darkGrayColor;
+}
+
+//form variable adjustments
+$label-margin-bottom   : 1rem;
+$label-margin-top      : 2rem;
+$form-grid-gutter-width: 1px;
+
+
+
+//modules scss bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+

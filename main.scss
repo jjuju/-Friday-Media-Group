@@ -1,0 +1,143 @@
+/////////// variables mixing and map
+@import "./_setting";
+
+
+
+
+////////////////SCSS
+
+//header logo/info
+header {
+    width: 100%;
+
+    .header-top {
+        height: 145px;
+
+        .social-icons {
+            &__style {
+                font-size    : 28px;
+                padding-top  : 5px;
+                border-radius: 0;
+
+                &--facebook {
+                    color: $facebook;
+
+                }
+
+                &--twitter {
+                    color: $twitter;
+
+                }
+            }
+
+        }
+
+    }
+}
+
+
+
+
+// navbar
+.navbar-nav {
+    @include custom-navbar;
+
+    .nav-link {
+        color: white;
+
+    }
+}
+
+
+// MAIN-CONTAINER 
+//>form   >cards-menu
+
+.main-container {
+    margin-top: 20px;
+
+    //FORM
+    .form {
+        background-color: $redColor;
+        height          : auto;
+
+        @include media-breakpoint-up(sm) {
+
+            height: 300px;
+
+        }
+
+        label {
+            font-size  : 19px;
+            padding-top: 5px;
+            color      : $white;
+        }
+
+
+        &__elements {
+            border-radius: 0;
+            border       : 0;
+            font-size    : 12px;
+        }
+
+        &--button {
+            margin-top: 5px;
+            border    : 0;
+            font-size : 18px;
+            padding   : 12px !important;
+        }
+
+    }
+
+}
+
+//CARDS MENU 
+.cards {
+    .cards__menu {
+        padding: 0 10px 20px 10px;
+        border : none;
+
+
+        @include media-breakpoint-up(lg) {
+            padding: 0 10px 0 10px;
+
+
+
+
+        }
+
+        .card-text {
+            color    : $white;
+            font-size: 18px;
+
+        }
+    }
+}
+
+//FOOTER
+footer {
+
+    .footer__elements {
+        min-height     : 50px;
+        max-height     : 100px;
+        display        : flex;
+        justify-content: center;
+        flex-wrap      : wrap;
+        list-style-type: none;
+        align-items    : center;
+        justify-content: center;
+        padding        : 0;
+
+        &--styles {
+            margin          : 4px;
+            color           : white;
+            background-color: $lightGrayColor;
+            padding         : 5px 10px;
+            display         : flex;
+            justify-content : center;
+
+        }
+    }
+
+
+
+}
